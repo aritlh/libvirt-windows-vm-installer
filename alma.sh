@@ -117,7 +117,7 @@ check_error "Failed to set disk permissions"
 echo "Creating and starting VM..."
 $SUDO virt-install \
   --name windows_server_2012 \
-  --ram 12000  --disk path=/var/lib/libvirt/images/windows_server_2012.qcow2,size=2048 \
+  --ram 12000  --disk path=/var/lib/libvirt/images/windows_server_2012.qcow2 \
   --vcpus 5 \
   --noautoconsole \
   --os-variant win2k22 \
